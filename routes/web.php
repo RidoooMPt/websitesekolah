@@ -6,18 +6,18 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/', function () {
+Route::get('/tentang', function () {
     return view('tentang');
 });
 
-Route::get('/', function () {
+Route::get('/akademik', function () {
     return view('akademik');
 });
 
-Route::get('/', function () {
-    return view('profil_guru');
+Route::get('/profil', function () {
+    return view('profil');
 });
 
-Route::get('/', function () {
-    return view('pendaftaran');
+Route::get('/SPMB', function () {
+    return view('SPMB');
 });
