@@ -744,7 +744,7 @@ footer {
         </div>
         <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
         <ul class="navbar-menu" id="navbar-menu">
-          <li><a href="/">HOME</a></li>
+          <li><a href="/home">HOME</a></li>
           <li><a href="/tentang">TENTANG SPENDAPRA</a></li>
           <li class="active"><a href="/akademik">AKADEMIK</a></li>
           <li><a href="/profil">PROFIL GURU</a></li>

@@ -516,7 +516,7 @@
         </div>
         <nav id="list-navbar">
             <ul class="navbar-menu" id="navbar-menu">
-                <li><a href="/">HOME</a></li>
+                <li><a href="/home">HOME</a></li>
                 <li><a href="/tentang" class="active">TENTANG SPENDAPRA</a></li>
                 <li><a href="/akademik">AKADEMIK</a></li>
                 <li><a href="/profil">PROFIL GURU</a></li>
