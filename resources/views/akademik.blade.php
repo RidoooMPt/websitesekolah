@@ -162,8 +162,6 @@
   margin-top: 10px; /* Jarak antara title dan subtitle */
 }
 
-
-
     /* Image Stack Section */
     .image-stack-container {
       display: flex;
@@ -243,7 +241,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 25px;
-      max-width: 800px;
+      max-width: 700px;
       width: 100%;
     }
 
@@ -254,6 +252,7 @@
       box-shadow: var(--shadow);
       text-align: center;
       transition: all 0.3s ease;
+      max-width: 100%; /* memastikan tidak melebihi container */
     }
 
     .ekstrakurikuler-card:hover {
@@ -262,9 +261,10 @@
     }
 
     .ekstrakurikuler-card img {
-      width: 100%;
-      height: 180px;
+      width: 80%;
+      height: 300px;
       object-fit: cover;
+      border-radius: 8px; /* optional */
     }
 
     .card-content {
@@ -281,37 +281,54 @@
       color: var(--text-medium);
       font-size: 0.95rem;
     }
+    .organization-buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Space between buttons */
+  margin-bottom: 80px;
+  margin-right: 30px;
+  flex-wrap: wrap; /* Allows buttons to stack on small screens */
+}
 
-    .organization-button-container {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 80px;
-    }
+.organization-button {
+  display: inline-flex;
+  align-items: center;
+  background: var(--spendapra-dark-green);
+  color: var(--text-light);
+  padding: 15px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  white-space: nowrap; /* Prevents text from wrapping */
+}
 
-    .organization-button {
-      display: inline-flex;
-      align-items: center;
-      background: var(--spendapra-dark-green);
-      color: var(--text-light);
-      padding: 15px 30px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
+.organization-button:hover {
+  background: var(--spendapra-green);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
 
-    .organization-button:hover {
-      background: var(--spendapra-green);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      transform: translateY(-2px);
-    }
+.organization-button i {
+  margin-left: 10px;
+  font-size: 0.9em;
+}
 
-    .organization-button i {
-      margin-left: 10px;
-      font-size: 0.9em;
-    }
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .organization-buttons-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .organization-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
     /* Footer Styles */
     footer {
@@ -586,9 +603,9 @@
 
   <section class="image-stack-container">
     <div class="image-stack">
-      <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=400&fit=crop" alt="Foto Utama">
-      <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=480&h=240&fit=crop" alt="Foto Kecil 1">
-      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=200&fit=crop" alt="Foto Kecil 2">
+      <img src="images/akademik1.png" alt="Foto Utama">
+      <img src="images/akademik2.png" alt="Foto Kecil 1">
+      <img src="images/akademik3.png" alt="Foto Kecil 2">
     </div>
   </section>
 
@@ -602,56 +619,56 @@
   <section class="ekstrakurikuler-container">
     <div class="ekstrakurikuler-grid">
       <div class="ekstrakurikuler-card">
-        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=300&h=200&fit=crop" alt="Basket">
+        <img src="images/paskib.png" alt="Basket">
         <div class="card-content">
-          <h3>Basket</h3>
-          <p>Melatih teknik dan kerjasama tim.</p>
+          <h3>Paskibraka</h3>
+          <p>Pbb dan kedisiplinan</p>
         </div>
       </div>
       <div class="ekstrakurikuler-card">
-        <img src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=300&h=200&fit=crop" alt="Pramuka">
+        <img src="images/pramuka.jpeg" alt="Pramuka">
         <div class="card-content">
           <h3>Pramuka</h3>
           <p>Menumbuhkan jiwa kepemimpinan.</p>
         </div>
       </div>
       <div class="ekstrakurikuler-card">
-        <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=300&h=200&fit=crop" alt="Bola Voli">
+        <img src="images/voli.png" alt="Bola Voli">
         <div class="card-content">
           <h3>Bola Voli</h3>
           <p>Mengembangkan keterampilan permainan.</p>
         </div>
       </div>
       <div class="ekstrakurikuler-card">
-        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" alt="English Club">
+        <img src="images/padus.jpeg" alt="English Club">
         <div class="card-content">
-          <h3>English Club</h3>
-          <p>Belajar bahasa Inggris secara menyenangkan.</p>
+          <h3>Paduan suara</h3>
+          <p>belajar menyuarakan bersama secara kompak </p>
         </div>
       </div>
       <div class="ekstrakurikuler-card">
-        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=200&fit=crop" alt="Musik">
+        <img src="images/PMR.png" alt="Musik">
         <div class="card-content">
-          <h3>Musik</h3>
-          <p>Mengasah kemampuan bermusik siswa.</p>
+          <h3>PMR</h3>
+          <p>Palang merah Remaja</p>
         </div>
       </div>
       <div class="ekstrakurikuler-card">
-        <img src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?w=300&h=200&fit=crop" alt="Jurnalistik">
+        <img src="images/jurnalistik.png" alt="Jurnalistik">
         <div class="card-content">
           <h3>Jurnalistik</h3>
           <p>Menulis, meliput, dan berpikir kritis.</p>
         </div>
       </div>
       <div class="ekstrakurikuler-card">
-        <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=300&h=200&fit=crop" alt="Tari Tradisional">
+        <img src="images/tari.png" alt="Tari Tradisional">
         <div class="card-content">
           <h3>Tari Tradisional</h3>
           <p>Melestarikan budaya bangsa.</p>
         </div>
       </div>
       <div class="ekstrakurikuler-card">
-        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop" alt="Futsal">
+        <img src="images/futsal.png" alt="Futsal">
         <div class="card-content">
           <h3>Futsal</h3>
           <p>Latihan fisik dan sportivitas.</p>
@@ -660,9 +677,12 @@
     </div>
   </section>
 
-  <div class="organization-button-container">
+  <div class="organization-buttons-container">
     <a href="/organisasi" class="organization-button">
       Lihat Organisasi Sekolah <i class="fas fa-arrow-right"></i>
+    </a>
+    <a href="/prestasi" class="organization-button">
+      Lihat Prestasi Sekolah <i class="fas fa-arrow-right"></i>
     </a>
   </div>
 
@@ -687,8 +707,7 @@
         <div class="map-section-footer">
           <h2>Lokasi Sekolah</h2>
           <div class="map">
-            <img src="https://maps.googleapis.com/maps/api/staticmap?center=-7.4832,112.5635&zoom=15&size=600x400&maptype=roadmap&markers=color:red%7C-7.4832,112.5635&key=YOUR_API_KEY" alt="Lokasi Sekolah Google Maps">
-          </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.985955277604!2d112.56054377504901!3d-7.466801692544781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b0029c5ca87%3A0x2bedf254132eb7fe!2sSMPN%202%20PRAMBON!5e0!3m2!1sid!2sid!4v1751357741242!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>  
       </div>
     </div>

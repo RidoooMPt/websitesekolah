@@ -132,7 +132,7 @@
     }
     .banner-photo {
       flex: 1;
-      height: 450px;
+      height: 650px;
       border-radius: 8px;
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -146,6 +146,7 @@
       flex: 0.7;
       align-self: flex-end;
       height: 380px;
+      margin-bottom: 80px
     }
 
     /* Welcome Text - UPDATED TO MATCH YOUR STYLE */
@@ -185,9 +186,8 @@
     .headmaster-photo {
       width: 290px;
       height: 350px;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       border-radius: 15px;
-      margin: 0 auto 20px;
+      margin: 0 auto 0px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -201,14 +201,14 @@
       object-fit: cover;
     }
     .headmaster-name {
-      font-weight: bold;
-      font-size: 24px;
+      font-weight: bolder;
+      font-size: 16px;
       color: #333;
       margin-bottom: 5px;
     }
     .headmaster-title {
       color: #666;
-      font-size: 18px;
+      font-size: 10px;
     }
 
     /* Teacher Profile Section - UPDATED TO MATCH YOUR STYLE */
@@ -508,13 +508,13 @@
 <!-- Teacher Banner Section - UPDATED -->
 <div class="teacher-banner">
   <div class="banner-photo">
-    <img src="img/foto-guru1.jpg" alt="Guru SMPN 2 Prambon">
+    <img src="images/semuaguru1.jpg" alt="Guru SMPN 2 Prambon">
   </div>
   <div class="banner-photo middle">
-    <img src="img/foto-guru2.jpg" alt="Guru SMPN 2 Prambon">
+    <img src="images/semuaguru2.jpg" alt="Guru SMPN 2 Prambon">
   </div>
   <div class="banner-photo">
-    <img src="img/foto-guru3.jpg" alt="Guru SMPN 2 Prambon">
+    <img src="images/semuaguru3.jpg" alt="Guru SMPN 2 Prambon">
   </div>
 </div>
 
@@ -526,10 +526,10 @@
   </div>
   <div class="headmaster-card">
     <div class="headmaster-photo">
-      <img src="img/kepsek-design.png" alt="Kepala Sekolah">
+      <img src="images/kepsek.png" alt="Kepala Sekolah">
     </div>
-    <div class="headmaster-name">Nama Kepala Sekolah</div>
-    <div class="headmaster-title">Kepala Sekolah S.Pd, M.Pd</div>
+    <div class="headmaster-name">Ruse Rahmawati Wulandari, S.Pd., M.Pd</div>
+    <div class="headmaster-title">Kepala Sekolah SMPN 2 Prambon</div>
   </div>
 </section>
 
@@ -544,7 +544,7 @@
     <div class="teachers-slider" id="teachersSlider">
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru1.jpg" alt="Guru Matematika">
+          <img src="images/guru1.png" alt="Guru Matematika">
         </div>
         <div class="teacher-name">Guru Matematika</div>
         <div class="teacher-subject">Fajrul Rohman S.Pd, M.Pd</div>
@@ -553,7 +553,7 @@
       
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru2.jpg" alt="Guru PKN">
+          <img src="images/guru2.png" alt="Guru PKN">
         </div>
         <div class="teacher-name">Guru PKN</div>
         <div class="teacher-subject">Stefani Anggun R S.pd</div>
@@ -562,7 +562,7 @@
       
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru3.jpg" alt="Guru Seni Budaya">
+          <img src="images/guru3.png" alt="Guru Seni Budaya">
         </div>
         <div class="teacher-name">Guru Seni Budaya</div>
         <div class="teacher-subject">Wahyudi Saputra S.Pd</div>
@@ -571,7 +571,7 @@
       
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru4.jpg" alt="Guru TIK">
+          <img src="images/guru3.png" alt="Guru TIK">
         </div>
         <div class="teacher-name">Guru TIK</div>
         <div class="teacher-subject">Permata Karina S.T M.Kom</div>
@@ -580,7 +580,7 @@
       
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru5.jpg" alt="Guru Bahasa Indonesia">
+          <img src="images/guru5.png" alt="Guru Bahasa Indonesia">
         </div>
         <div class="teacher-name">Guru Bahasa Indonesia</div>
         <div class="teacher-subject">Budianto Wijaya S.Pd</div>
@@ -589,7 +589,7 @@
       
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru6.jpg" alt="Guru IPA">
+          <img src="images/guru7.png" alt="Guru IPA">
         </div>
         <div class="teacher-name">Guru IPA</div>
         <div class="teacher-subject">Wirata Widya S.Pd</div>
@@ -598,7 +598,7 @@
       
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru7.jpg" alt="Guru Bahasa Inggris">
+          <img src="images/guru8.png" alt="Guru Bahasa Inggris">
         </div>
         <div class="teacher-name">Guru Bahasa Inggris</div>
         <div class="teacher-subject">Bunaika Ramawati S S.Pd</div>
@@ -607,7 +607,7 @@
       
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru8.jpg" alt="Guru IPS">
+          <img src="images/guru9.png" alt="Guru IPS">
         </div>
         <div class="teacher-name">Guru IPS</div>
         <div class="teacher-subject">Lyodra Mahendra W S.Kom</div>
@@ -616,7 +616,7 @@
       
       <div class="teacher-card">
         <div class="teacher-photo">
-          <img src="img/guru9.jpg" alt="Guru Olahraga">
+          <img src="images/guru10.png" alt="Guru Olahraga">
         </div>
         <div class="teacher-name">Guru Olahraga</div>
         <div class="teacher-subject">Sintah Sariawan S.OG</div>

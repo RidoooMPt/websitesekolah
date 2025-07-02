@@ -129,7 +129,6 @@ header {
 }
 
 /* Hero Section */
-/* Hero Section Container */
 .hero-section {
     position: relative;
     background: url("images/background.png") no-repeat center center/cover;
@@ -149,9 +148,16 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 945px;
     background: linear-gradient(135deg, rgba(34, 230, 178, 0.7), rgba(231, 76, 60, 0.0));
     z-index: 0; /* Pastikan di bawah konten */
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 768px) {
+    .hero-section::before {
+        height: 95%;
+    }
 }
 
 /* Hero Content Container */
@@ -290,12 +296,12 @@ header {
 }
 
 /* Menu Cards Section */
+/* Menu Cards Section */
 .menu-cards-wrapper {
     display: flex;
     justify-content: center;
-    padding: 0 20px; /* Padding untuk wrapper */
-    position: relative;
-    z-index: 10; /* Pastikan di atas hero section */
+    padding: 0 20px;
+    margin: 80px 0 50px;
 }
 
 .menu-cards {
@@ -304,8 +310,8 @@ header {
     box-shadow: var(--shadow);
     padding: 30px 40px;
     width: 100%;
-    max-width: 1200px; /* Lebar maksimum seperti di gambar */
-    margin: 180px auto 20px;
+    max-width: 1200px;
+    margin-top: 90px;
 }
 
 .menu-cards-container {
@@ -324,17 +330,19 @@ header {
     padding: 15px 20px;
     border-radius: 15px;
     flex: 1;
+    text-decoration: none; /* Menghilangkan underline */
+    color: inherit; /* Memastikan warna teks mengikuti parent */
 }
 
 .menu-card:hover {
-    background: rgba(74, 144, 164, 0.05); /* Warna hover menyesuaikan --spendapra-light-blue */
+    background: rgba(74, 144, 164, 0.05);
     transform: translateY(-3px);
 }
 
 .menu-card .icon {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, var(--spendapra-orange), #f39c12); /* Oranye seperti di gambar */
+    background: linear-gradient(135deg, var(--spendapra-orange), #f39c12);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -364,9 +372,20 @@ header {
     margin: 0;
 }
 
+/* Menghilangkan underline dari semua link dalam menu-card */
+.menu-card a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+
 /* Sambutan Kepala Sekolah Section */
 .kepala-sekolah-section {
-    padding: 80px 20px; /* Padding atas lebih besar untuk ruang */
+    padding: 0px 20px; /* Padding atas lebih besar untuk ruang */
     display: flex;
     justify-content: center;
     background: #f0f2f5; /* Background section */
@@ -453,17 +472,11 @@ header {
 }
 
 .video-thumbnail-wrapper {
-    flex: 1; /* Ambil setengah lebar */
+
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.video-thumbnail-wrapper img {
-    width: 100%;
-    height: auto;
-    display: block;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
 }
 
 .play-button {
@@ -884,7 +897,7 @@ footer {
 
             .menu-cards {
                 padding: 20px;
-                margin: 0 10px 40px;
+                margin: 150px 10px 0px;
                 width: calc(100% - 20px);
             }
 
@@ -977,20 +990,20 @@ footer {
             </div>
         </div>
     </section>
-
     <section class="menu-cards-wrapper">
         <div class="menu-cards">
             <div class="menu-cards-container">
-                <div class="menu-card">
+                <a href="/tentang" class="menu-card">
                     <div class="icon">
-                        <i class="fas fa-school"></i> </div>
+                        <i class="fas fa-school"></i>
+                    </div>
                     <div class="content">
                         <h3>TENTANG SPENDAPRA</h3>
                         <p>Informasi lengkap tentang sejarah, visi, misi, dan profil sekolah</p>
                     </div>
-                </div>
+                </a>
                 
-                <div class="menu-card">
+                <a href="/akademik" class="menu-card">
                     <div class="icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
@@ -998,17 +1011,17 @@ footer {
                         <h3>AKADEMIK</h3>
                         <p>Program akademik, kurikulum, dan kegiatan pembelajaran di sekolah</p>
                     </div>
-                </div>
+                </a>
                 
-                <div class="menu-card">
+                <a href="/kritiknsaran" class="menu-card">
                     <div class="icon">
                         <i class="fas fa-newspaper"></i>
                     </div>
                     <div class="content">
-                        <h3>Kritik & saran</h3>
+                        <h3>Kritik & Saran</h3>
                         <p>Berita terkini dan informasi penting seputar kegiatan sekolah</p>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -1036,10 +1049,7 @@ footer {
     <section class="video-section">
         <div class="video-card">    
             <div class="video-thumbnail-wrapper">
-                <img src="images/video-thumbnail.png" alt="Video Thumbnail">
-                <div class="play-button">
-                    <i class="fas fa-play-circle"></i>
-                </div>
+                <iframe width="360" height="215" src="https://www.youtube.com/embed/H0EaKPaqt4Y?si=_un7pT129cSumBH8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <div class="video-text-content">
                 <h2>SMP NEGERI 2 PRAMBON</h2>
@@ -1068,8 +1078,8 @@ footer {
                 <div class="map-section-footer">
                     <h2>Lokasi Sekolah</h2>
                     <div class="map">
-                        <img src="images/map.png" alt="Lokasi Sekolah Google Maps">
-                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.985955277604!2d112.56054377504901!3d-7.466801692544781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b0029c5ca87%3A0x2bedf254132eb7fe!2sSMPN%202%20PRAMBON!5e0!3m2!1sid!2sid!4v1751357741242!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
                 </div>  
             </div>
         </div>

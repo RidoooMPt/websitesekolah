@@ -21,3 +21,15 @@ Route::get('/profil', function () {
 Route::get('/SPMB', function () {
     return view('SPMB');
 });
+
+Route::get('/organisasi', function () {
+    return view('organisasi');
+});
+
+Route::get('/prestasi', function () {
+    return view('prestasi');
+});
+
+Route::get('/kritiknsaran', function () {
+    return view('kritiknsaran');
+});
